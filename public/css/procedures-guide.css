@@ -1,0 +1,82 @@
+/* Style for the entire container */
+.page-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Style for the sector container */
+.sector-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items */
+}
+
+/* Style for centered text */
+.text-center {
+    text-align: center;
+}
+
+.select {
+    border-radius: 0px;
+}
+
+/* Style for each sector container */
+.sector {
+    background-color: #ffffff; /* White background */
+    padding: 25px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px -5px 0px 0px rgb(40 40 155);
+    margin-bottom: 20px;
+}
+
+/* Style for administrations container */
+.administrations-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.sector-name {
+    font-size: medium;
+    font-style: inherit;
+}
+/* Style for each administration container */
+.administration {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 2px 0px rgb(240 98 37);
+    margin: 10px;
+}
+
+/* Style for each division container */
+.division {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgb(0 192 255);
+    margin-top: 15px;
+}
+
+/* Style for divisions container */
+.divisions-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Style for hidden elements */
+.hidden {
+    display: none;
+}

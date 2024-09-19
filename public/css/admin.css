@@ -1,0 +1,28 @@
+/* Style for the admin header */
+.admin-header {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Style for the form container */
+.form-container {
+    background-color: #f4f4f4;
+    padding: 50px;
+}
+.table {
+    width: 100%;
+    margin-bottom: inherit;
+    color: black;
+    font-family: ariel;
+    font-size: large;
+}
+.tbody {
+    background-color: #333;
+    color: #fff;
+}
+.form-check-label {
+    margin-bottom: 0px;
+    position: relative;
+    padding: 2mm;
+}

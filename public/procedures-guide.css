@@ -1,0 +1,160 @@
+.page-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Style for the sector container */
+.sector-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.sector-name {
+    font-size: larger;
+    font-style: initial;
+}
+/* Style for centered text */
+.text-center {
+    text-align: center;
+}
+
+.select {
+    border-radius: 0px;
+}
+
+/* Style for each sector container */
+.sector {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px -5px 0px 0px rgb(40 40 155);
+    /* margin-bottom: 20px; */
+    max-height: fit-content;
+    overflow: visible;
+    transition: max-height 0.3s ease-in-out;
+    width: 15vw;
+    min-width: max-content;
+    display: grid;
+    margin: 20px;
+    /* padding-bottom: 48px; */
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+
+
+
+
+/* Style for each administration container */
+.administration {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px rgb(240 98 37);
+    margin: 5px;
+    width: auto;
+
+
+}
+span.administration {
+    box-shadow: none;
+}
+/* Style for each division container */
+.division {
+
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgb(0 192 255);
+    margin-top: 15px;
+    min-width: fit-content;
+    width: max-content;
+}
+
+/* Style for divisions container */
+.divisions-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* Style for hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Style for the custom dropdown container */
+.select {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Style for the custom dropdown options (initially hidden) */
+.select-items {
+    position: absolute;
+    left: 10px; /* Adjust the left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px; 
+    display: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+/* Style for each option in the custom dropdown */
+.select-items div {
+    padding: 10px;
+    transition: background-color 0.3s;
+    display: block;
+    width: max-content;
+}
+
+/* Hover effect for the custom dropdown options */
+.select-items div:click {
+    background-color: #f2f2f2;
+}
+
+/* Show the custom dropdown options when clicked */
+.custom-select:click .select-items {
+    display: block;
+}
+
+/* Adjust the style for the selected item when the dropdown is open */
+.custom-select.clicked .select-selected {
+    border-radius: 10px 10px 0 0;
+    background-color: #f2f2f2;
+}
